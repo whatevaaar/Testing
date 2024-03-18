@@ -1,0 +1,47 @@
+.navbar {
+  background-color: #333;
+  padding: 10px;
+  max-width: 100vw;
+}
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.navbar ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.cv {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+.cv h2 {
+  margin-top: 0;
+}
+.cv .trabajos {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+.cv .trabajos .trabajo {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+}
+.cv .trabajos .trabajo h3 {
+  margin-top: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .cv {
+    padding: 10px;
+  }
+}/*# sourceMappingURL=styles.css.map */

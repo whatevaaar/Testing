@@ -1,0 +1,66 @@
+$color-primary: #333;
+$color-secondary: #f4f4f4;
+$color-accent: #fff;
+
+@mixin navbar-background {
+    background-color: $color-primary;
+    padding: 10px;
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+            display: inline-block;
+            margin-right: 20px;
+
+            a {
+                text-decoration: none;
+                color: $color-accent;
+            }
+        }
+    }
+}
+
+@mixin cv-layout {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: $color-secondary;
+
+    h2 {
+        margin-top: 0;
+    }
+
+    .trabajos {
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+
+        .trabajo {
+            background-color: $color-accent;
+            padding: 10px;
+            border-radius: 5px;
+
+            h3 {
+                margin-top: 0;
+            }
+        }
+    }
+}
+
+.navbar {
+    @include navbar-background;
+    max-width: 100vw;
+}
+
+.cv {
+    @include cv-layout;
+}
+
+@media screen and (max-width: 768px) {
+    .cv {
+        padding: 10px;
+    }
+}
